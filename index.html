@@ -1,45 +1,48 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Room</title>
+    <link rel="stylesheet" href="src/styles/room.css" />
+  </head>
 
-<head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <title>Room</title>
-        <link rel="stylesheet" href="src/styles/room.css">
-</head>
-
-<body>
-
-<div class="wrapper">
-    <div class="roomWrapper">
+  <body>
+    <div class="wrapper">
+      <div class="roomWrapper">
         <div class="room">
-        <div id="wall">
-            <div id="window">
-
-            </div>
-
-        </div>
-        <div id="floor">
-
-        </div>
-        </div>
-
-    </div>
-
-    <div class="sidebar">
-        <div>
-            <input type="radio" id="radioDay"
-             name="time" value="Day">
-            <label for="radioDay">Day</label>
-        
-            <input type="radio" id="radioNight"
-             name="time" value="night">
-            <label for="radioNight">Night</label>
-        
+          <div id="wall">
+            <div id="window"></div>
           </div>
+
+          <div id="lamp">
+            <div id="lightbulb"></div>
+          </div>
+
+          <div id="floor"></div>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div>
+          <div class="controlTime">
+            <input type="radio" id="radioDay" name="time" value="Day" />
+            <label for="radioDay">Day</label>
+
+            <input type="radio" id="radioNight" name="time" value="night" />
+            <label for="radioNight">Night</label>
+          </div>
+
+          <div class="controlLight">
+            <input type="radio" id="radioLightOn" name="light" value="lightOn" />
+            <label for="radioOn">Light on</label>
+
+            <input type="radio" id="radioLightOff" name="light" value="lightOff" />
+            <label for="radioOff">Light off</label>
+          </div>
+          
+        </div>
+      </div>
     </div>
-</div>
-
-
-</body>
-<script src="src/scripts/controls.js"></script> 
+  </body>
+  <script src="src/scripts/controls.js"></script>
 </html>
