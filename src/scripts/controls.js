@@ -4,11 +4,17 @@ var radioNight = document.getElementById("radioNight")
 var radioLightOn = document.getElementById("radioLightOn")
 var radioLightOff = document.getElementById("radioLightOff")
 
+var radioCurtainOn = document.getElementById("radioCurtainOn")
+var radioCurtainOff = document.getElementById("radioCurtainOff")
+
 radioDay.addEventListener("click", changeTime, false)
 radioNight.addEventListener("click", changeTime, false);
 
 radioLightOn.addEventListener("click", changeLight, false)
 radioLightOff.addEventListener("click", changeLight, false)
+
+radioCurtainOn.addEventListener("click", changeCurtain, false)
+radioCurtainOff.addEventListener("click", changeCurtain, false)
 
 function changeTime(event) {
 
@@ -32,12 +38,8 @@ function changeTime(event) {
 }
 
 function changeLight(event) {
-
-    console.log(event);
-
     var lightbulb = document.getElementById("lightbulb")
 
-    console.log(wall)
     if (event.target.id == "radioLightOn") {
         lightbulb.style.background = "rgba(255,255,255,1)" 
         lightbulb.style.boxShadow = "0px 4px 1000px 400px rgba(255, 248, 219, 0.3)"
@@ -47,6 +49,18 @@ function changeLight(event) {
     if (event.target.id == "radioLightOff") {
         lightbulb.style.background = ""
         lightbulb.style.boxShadow = ""
+    }
+}
+
+function changeCurtain(event) {
+    var curtain = document.getElementById("curtain")
+
+    if (event.target.id == "radioCurtainOn") {
+        curtain.style.height = "90%"
+    }
+
+    if (event.target.id == "radioCurtainOff") {
+        curtain.style.height = "10%"
     }
 }
 

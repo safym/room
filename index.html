@@ -11,7 +11,20 @@
       <div class="roomWrapper">
         <div class="room">
           <div id="wall">
-            <div id="window"></div>
+
+            <div id="window">
+              <div id="curtain"></div>
+              <table id="frame">
+                <tr class="topWindow">
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr class="bottomWindow">
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
           </div>
 
           <div id="lamp">
@@ -34,10 +47,18 @@
 
           <div class="controlLight">
             <input type="radio" id="radioLightOn" name="light" value="lightOn" />
-            <label for="radioOn">Light on</label>
+            <label for="radioLightOn">Light on</label>
 
             <input type="radio" id="radioLightOff" name="light" value="lightOff" />
-            <label for="radioOff">Light off</label>
+            <label for="radioLightOff">Light off</label>
+          </div>
+
+          <div class="controlCurtain">
+            <input type="radio" id="radioCurtainOn" name="curtain" value="curtainOn" />
+            <label for="radioCurtainOn">Curtain down</label>
+
+            <input type="radio" id="radioCurtainOff" name="curtain" value="curtainOff" />
+            <label for="radioLightOff">Curtain up</label>
           </div>
           
         </div>
