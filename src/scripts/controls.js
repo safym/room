@@ -42,7 +42,7 @@ function changeLight(event) {
 
     if (event.target.id == "radioLightOn") {
         lightbulb.style.background = "rgba(255,255,255,1)" 
-        lightbulb.style.boxShadow = "0px 4px 1000px 400px rgba(255, 248, 219, 0.3)"
+        lightbulb.style.boxShadow = "0px 4px 1000px 600px rgba(255, 241, 197, 0.4)"
         // lightbulb.style.boxShadow = "0px 2px 10px rgba(255,255,255,0.8), 0px 5px 50px rgba(255,255,255,0.8), 0px 8px 80px rgba(255,255,255,0.6), 0px 8px 120px rgba(255,255,255,0.6)"
     }
 
